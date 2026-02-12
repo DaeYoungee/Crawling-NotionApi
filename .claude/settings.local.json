@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"from notion_client import Client; c = Client\\(auth=''test''\\); print\\(dir\\(c.databases\\)\\)\")",
+      "Bash(python -c \"from notion_client import Client; c = Client\\(auth=''test''\\); print\\([m for m in dir\\(c\\) if not m.startswith\\(''_''\\)]\\)\")",
+      "Bash(python -c \"from notion_client import Client; c = Client\\(auth=''test''\\); print\\(''pages:'', dir\\(c.pages\\)\\); print\\(''databases:'', dir\\(c.databases\\)\\)\")",
+      "Bash(python:*)"
+    ]
+  }
+}
